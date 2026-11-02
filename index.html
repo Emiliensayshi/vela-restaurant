@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171713">
+  <meta name="description" content="VELA — modern dining, seasonal ingredients and unforgettable evenings in Melbourne.">
+  <title>VELA — A Modern Dining Experience</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="loader" id="loader">
+    <span>VELA.</span>
+  </div>
+
+  <header class="header" id="header">
+    <a href="#" class="logo">VELA<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#story">Our story</a>
+      <a href="#menu">The menu</a>
+      <a href="#experience">Experience</a>
+      <a href="#visit">Find us</a>
+    </nav>
+
+    <a href="#booking" class="header-book">Book a table <span>↗</span></a>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow">A DIFFERENT KIND OF DINING</p>
+        <h1>Made for<br><em>the moments.</em></h1>
+        <p class="hero-description">
+          Thoughtful food. Beautiful surroundings.<br>
+          An evening worth remembering.
+        </p>
+        <a href="#menu" class="light-button">Explore our menu <span>↗</span></a>
+      </div>
+
+      <div class="hero-footer">
+        <span>MELBOURNE, AUSTRALIA</span>
+        <span>EST. 2026</span>
+        <a href="#story">SCROLL TO DISCOVER ↓</a>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro section" id="story">
+      <div class="section-label reveal">01 / OUR PHILOSOPHY</div>
+
+      <div class="intro-content">
+        <p class="intro-small reveal">A PLACE TO SLOW DOWN.</p>
+        <h2 class="reveal">
+          More than a meal.<br>
+          <em>A feeling.</em>
+        </h2>
+        <p class="intro-text reveal">
+          At VELA, we believe the best experiences happen around a table.
+          Our kitchen celebrates seasonal ingredients, honest cooking and
+          the simple pleasure of sharing something special.
+        </p>
+        <a href="#experience" class="text-link reveal">Discover our approach <span>↗</span></a>
+      </div>
+    </section>
+
+    <!-- FEATURE IMAGE -->
+    <section class="feature-image">
+      <img
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=85"
+        alt="Beautifully presented fine dining meal"
+        loading="lazy"
+      >
+      <div class="feature-caption">
+        <span>THE ART OF GOOD FOOD</span>
+        <span>01 — 03</span>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section section" id="menu">
+      <div class="section-label reveal">02 / THE MENU</div>
+
+      <div class="menu-heading reveal">
+        <div>
+          <p class="eyebrow">FRESH FROM OUR KITCHEN</p>
+          <h2>Simple things,<br><em>beautifully done.</em></h2>
+        </div>
+        <p class="menu-intro">
+          Our menu changes with the seasons, bringing together
+          fresh ingredients and creative ideas.
+        </p>
+      </div>
+
+      <div class="menu-tabs reveal">
+        <button class="menu-tab active" data-category="all">All dishes</button>
+        <button class="menu-tab" data-category="starters">To begin</button>
+        <button class="menu-tab" data-category="mains">Main course</button>
+        <button class="menu-tab" data-category="desserts">Something sweet</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="dish reveal" data-category="starters">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Fresh seasonal salad" loading="lazy">
+            <span class="dish-number">01</span>
+          </div>
+          <div class="dish-info">
+            <div><h3>Garden & Burrata</h3><span>TO BEGIN</span></div>
+            <p>$19</p>
+          </div>
+          <p class="dish-description">Heirloom tomatoes, creamy burrata, basil oil and toasted sourdough.</p>
+        </article>
+
+        <article class="dish reveal" data-category="starters">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=900&q=85" alt="Fresh seafood dish" loading="lazy">
+            <span class="dish-number">02</span>
+          </div>
+          <div class="dish-info">
+            <div><h3>Coastal Crudo</h3><span>TO BEGIN</span></div>
+            <p>$23</p>
+          </div>
+          <p class="dish-description">Fresh market fish, citrus dressing, chilli and fragrant herbs.</p>
+        </article>
+
+        <article class="dish reveal" data-category="mains">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=85" alt="Grilled steak main course" loading="lazy">
+            <span class="dish-number">03</span>
+          </div>
+          <div class="dish-info">
+            <div><h3>Charcoal Sirloin</h3><span>MAIN COURSE</span></div>
+            <p>$42</p>
+          </div>
+          <p class="dish-description">Grilled sirloin, roasted garlic butter and seasonal greens.</p>
+        </article>
+
+        <article class="dish reveal" data-category="mains">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=85" alt="Fresh pasta dish" loading="lazy">
+            <span class="dish-number">04</span>
+          </div>
+          <div class="dish-info">
+            <div><h3>Wild Mushroom Pasta</h3><span>MAIN COURSE</span></div>
+            <p>$34</p>
+          </div>
+          <p class="dish-description">Handmade pasta, wild mushrooms, parmesan and thyme.</p>
+        </article>
+
+        <article class="dish reveal" data-category="desserts">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85" alt="Dessert with berries" loading="lazy">
+            <span class="dish-number">05</span>
+          </div>
+          <div class="dish-info">
+            <div><h3>Summer Panna Cotta</h3><span>DESSERT</span></div>
+            <p>$16</p>
+          </div>
+          <p class="dish-description">Vanilla panna cotta, fresh berries and honey crumble.</p>
+        </article>
+
+        <article class="dish reveal" data-category="desserts">
+          <div class="dish-image">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Chocolate cake dessert" loading="lazy">
+            <span class="dish-number">06</span>
+          </div>
+          <div class="dish-info">
+            <div><h3>Dark Chocolate Torte</h3><span>DESSERT</span></div>
+            <p>$17</p>
+          </div>
+          <p class="dish-description">Rich chocolate, espresso cream and a little sea salt.</p>
+        </article>
+      </div>
+
+      <p class="menu-note">A SAMPLE MENU · ALL DISHES AND PRICES ARE CONCEPTUAL</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience section" id="experience">
+      <div class="section-label reveal">03 / THE EXPERIENCE</div>
+
+      <div class="experience-layout">
+        <div class="experience-image reveal">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85" alt="Warm restaurant interior" loading="lazy">
+        </div>
+
+        <div class="experience-content">
+          <p class="eyebrow reveal">THE SPACE</p>
+          <h2 class="reveal">Stay a little<br><em>longer.</em></h2>
+          <p class="reveal">
+            Soft lighting, natural textures and a welcoming atmosphere.
+            Every detail is designed to make you feel at home, whether
+            you're celebrating something special or simply enjoying dinner.
+          </p>
+
+          <div class="experience-detail reveal">
+            <span>01</span>
+            <div><h3>Thoughtful design</h3><p>A relaxed space with its own character.</p></div>
+          </div>
+          <div class="experience-detail reveal">
+            <span>02</span>
+            <div><h3>Seasonal cooking</h3><p>Fresh ingredients, treated with care.</p></div>
+          </div>
+          <div class="experience-detail reveal">
+            <span>03</span>
+            <div><h3>Good company</h3><p>Made for sharing and coming together.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery section">
+      <div class="gallery-heading reveal">
+        <div class="section-label">04 / A CLOSER LOOK</div>
+        <h2>Little details.<br><em>Lasting memories.</em></h2>
+      </div>
+
+      <div class="gallery-grid">
+        <img class="gallery-one reveal" src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=1000&q=85" alt="Fresh food ingredients" loading="lazy">
+        <img class="gallery-two reveal" src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=85" alt="Restaurant dining atmosphere" loading="lazy">
+        <img class="gallery-three reveal" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=85" alt="Beautifully prepared food" loading="lazy">
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking section" id="booking">
+      <div class="booking-background"></div>
+      <div class="booking-overlay"></div>
+
+      <div class="booking-content">
+        <p class="eyebrow reveal">YOUR TABLE IS WAITING</p>
+        <h2 class="reveal">Make an evening<br><em>of it.</em></h2>
+        <p class="reveal">Good food is even better when shared.</p>
+
+        <form id="bookingForm" class="booking-form reveal">
+          <div class="form-row">
+            <label>
+              Your name
+              <input type="text" id="guestName" placeholder="Full name" required>
+            </label>
+
+            <label>
+              Email address
+              <input type="email" id="guestEmail" placeholder="you@example.com" required>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>
+              Date
+              <input type="date" id="bookingDate" required>
+            </label>
+
+            <label>
+              Guests
+              <select id="guestCount" required>
+                <option value="1">1 guest</option>
+                <option value="2" selected>2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+                <option value="7">7 guests</option>
+                <option value="8">8 guests</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Preferred time
+            <select id="bookingTime" required>
+              <option value="5:30 PM">5:30 PM</option>
+              <option value="6:00 PM">6:00 PM</option>
+              <option value="6:30 PM">6:30 PM</option>
+              <option value="7:00 PM">7:00 PM</option>
+              <option value="7:30 PM">7:30 PM</option>
+              <option value="8:00 PM">8:00 PM</option>
+            </select>
+          </label>
+
+          <button type="submit" class="light-button booking-submit">
+            Request a table <span>↗</span>
+          </button>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+          <p class="form-note">DEMO BOOKING FORM — NO REAL RESERVATION WILL BE MADE.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="visit section" id="visit">
+      <div class="section-label reveal">05 / COME FIND US</div>
+
+      <div class="visit-layout">
+        <div>
+          <p class="eyebrow reveal">WE'D LOVE TO SEE YOU</p>
+          <h2 class="reveal">Until we meet<br><em>at the table.</em></h2>
+        </div>
+
+        <div class="visit-details reveal">
+          <div>
+            <span>LOCATION</span>
+            <p>Melbourne, Australia</p>
+            <small>Concept restaurant — fictional address</small>
+          </div>
+
+          <div>
+            <span>OPENING HOURS</span>
+            <p>Tuesday – Sunday</p>
+            <small>5:30 PM – 10:00 PM</small>
+          </div>
+
+          <div>
+            <span>CONTACT</span>
+            <p>hello@vela.example</p>
+            <small>Example contact for this demo</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="footer-logo">VELA<span>.</span></a>
+    <p>MADE FOR THE MOMENTS.</p>
+    <span>© 2026 VELA. CONCEPT WEBSITE.</span>
+    <a href="#header" class="back-top">BACK TO TOP ↑</a>
+  </footer>
+
+</body>
+</html>
